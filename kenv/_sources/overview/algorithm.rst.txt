@@ -1,5 +1,0 @@
-KENV algorithm & features
-==========================
-
-Introduction to the theory
---------------------------------
