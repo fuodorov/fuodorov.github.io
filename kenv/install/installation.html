@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <title>Overview: module code &mdash; KENV 0.3.0.0 documentation</title>
+  <title>Installation on a local computer &mdash; KENV 0.3.0.0 documentation</title>
   
 
   
@@ -38,7 +38,8 @@
 
     
     <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" /> 
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="prev" title="KENV theory" href="../overview/algorithm.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -87,11 +88,12 @@
               
             
             
-              <ul>
+              <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../overview/overview.html">Overview of the code</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../install/installation.html">Installation on a local computer</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../tutorial/tutorial.html">Tutorial to the code</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../api_reference/api_reference.html">API reference</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Installation on a local computer</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#installing-kenv">Installing KENV</a></li>
+</ul>
+</li>
 </ul>
 
             
@@ -140,10 +142,14 @@
     
       <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
         
-      <li>Overview: module code</li>
+      <li>Installation on a local computer</li>
     
     
       <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/install/installation.rst.txt" rel="nofollow"> View page source</a>
+          
         
       </li>
     
@@ -155,16 +161,66 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <h1>All modules for which code is available</h1>
-<ul><li><a href="kenv/accelerator.html">kenv.accelerator</a></li>
-<li><a href="kenv/beam.html">kenv.beam</a></li>
-<li><a href="kenv/solver.html">kenv.solver</a></li>
+  
+<style>
+/* CSS overrides for sphinx_rtd_theme */
+
+/* 24px margin */
+.nbinput.nblast.container,
+.nboutput.nblast.container {
+    margin-bottom: 19px;  /* padding has already 5px */
+}
+
+/* ... except between code cells! */
+.nblast.container + .nbinput.container {
+    margin-top: -19px;
+}
+
+.admonition > p:before {
+    margin-right: 4px;  /* make room for the exclamation icon */
+}
+
+/* Fix math alignment, see https://github.com/rtfd/sphinx_rtd_theme/pull/686 */
+.math {
+    text-align: unset;
+}
+</style>
+<div class="section" id="installation-on-a-local-computer">
+<h1>Installation on a local computer<a class="headerlink" href="#installation-on-a-local-computer" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="installing-kenv">
+<h2>Installing KENV<a class="headerlink" href="#installing-kenv" title="Permalink to this headline">¶</a></h2>
+<p>The installation requires the <a class="reference external" href="https://www.python.org/downloads/">Python</a>.</p>
+<p><strong>Installation steps</strong>:</p>
+<ul>
+<li><p>Install <code class="docutils literal notranslate"><span class="pre">kenv</span></code></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">kenv</span>
+</pre></div>
+</div>
+<p>Alternatively, instead of using <code class="docutils literal notranslate"><span class="pre">pip</span></code>, you can also install KENV
+from the souces, by cloning the <a class="reference external" href="https://github.com/fuodorov/kenv">code from Github</a>, and typing <code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">setup.py</span> <span class="pre">install</span></code>.</p>
+</li>
+<li><p><strong>Optional:</strong> To be able to run interactive simulations, write text and mathematical formulas at the same time, install the optional package <code class="docutils literal notranslate"><span class="pre">jupyterlab</span></code>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">jupyterlab</span>
+</pre></div>
+</div>
+</li>
+<li><p><strong>Optional:</strong> We recommend installing all additional packages from the <a class="reference external" href="https://github.com/fuodorov/kenv/blob/master/requirements.txt">requirements</a>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="o">-</span><span class="n">r</span> <span class="n">requirements</span>
+</pre></div>
+</div>
+</li>
 </ul>
+</div>
+</div>
+
 
            </div>
            
           </div>
           <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="../overview/algorithm.html" class="btn btn-neutral float-left" title="KENV theory" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
 
   <hr/>
 
