@@ -1,3 +1,3 @@
 # fuodorov.github.io
 
-Vyacheslav Fedorov | Novosibirsk, Russia | Physicist & Software Engineer | Personal Page
+Vyacheslav Fedorov | Novosibirsk, Russia | Software Engineer & Physicist | Personal Page
