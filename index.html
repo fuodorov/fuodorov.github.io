@@ -1,59 +1,272 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
 	<meta charset="utf-8">
-	<title>Personal Page</title>
-	<link href='https://fonts.googleapis.com/css?family=Roboto:300,300italic' rel='stylesheet' type='text/css'>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Vyacheslav Fedorov — Software Engineer & Physicist</title>
+	<link href='https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="style.css">
 	<link rel="icon" type="image/jpeg" href="icon.png" />
 </head>
 
 <body>
-	<div class="content">
-		<div class="intro">
-			<span>My name is <span class="highlight">Vyacheslav Fedorov</span> and I'm
-				<span class="highlight">Software Engineer</span>!</span><br/>
-				<span>Like any other programmer and passionate professional,<br> I love learning new things and technologies.</span><br>
-<!-- 			<span>Instead of many words look into my CV <a href="https://novosibirsk.hh.ru/resume/41f5107eff0aeba4150039ed1f627238346845"><span class="highlight">here</span></a>.</span><br> -->
-			<br>
-			<span>
-				<a href="projects">PROJECTS</a> |
-				<a href="papers">PAPERS</a> |
-				<a href="teach-in">TEACH-IN</a>
-<!--				<a href="gallery">GALLERY</a>-->
-			</span>
-		</div>
-		<table>
-			<tr>
-				<td rowspan="3">
-					<img src="docs/fuodorov.jpg" alt="Vyacheslav Fedorov" title="Vyacheslav Fedorov" />
-				</td>
-				<td>
-					<span>Email:</span>
-				</td>
-				<td>
-					<a href="mailto:slava@fuodorov.ru">slava@fuodorov.ru</a>
-				</td>
-			</tr>
-			<tr>
-				<td>
-					<span>Telegram:</span>
-				</td>
-				<td>
-					<a href="https://t.me/slavafuodorov">slavafuodorov</a>
-				</td>
-			</tr>
-			<tr>
-				<td>
-					<span>GitHub:</span>
-				</td>
-				<td>
-					<a href="https://github.com/fuodorov/">fuodorov</a>
-				</td>
-			</tr>
-		</table>
+	<div class="container">
+		<!-- Header -->
+		<header class="header">
+			<div class="header-content">
+				<img src="avatar.jpg" alt="Vyacheslav Fedorov" class="avatar" />
+				<div class="header-text">
+					<h1>Vyacheslav Fedorov</h1>
+					<p class="subtitle">Software Developer & Research Scientist</p>
+					<p class="location">Novosibirsk, Siberia, Russia</p>
+					<div class="contacts">
+						<a href="mailto:slava@fuodorov.ru" class="contact-link">Email</a>
+						<span class="divider">•</span>
+						<a href="https://t.me/slavafuodorov" class="contact-link">Telegram</a>
+						<span class="divider">•</span>
+						<a href="https://github.com/fuodorov/" class="contact-link">GitHub</a>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<!-- About -->
+		<section class="section">
+			<h2>About</h2>
+			<p>Experienced Python developer and research scientist with 8+ years of combined academic and industry experience. Currently teaching "Software development and application in Physical research" at NSU and leading research at Budker Institute of Nuclear Physics, specializing in particle beam dynamics and accelerator control systems.</p>
+			<p>I am passionate about solving complex problems at the intersection of physics, mathematics, and software engineering. As Richard Feynman said, "the best test of understanding is the ability to explain it to someone else" — I actively mentor teams, teach seminars on advanced CS topics, and develop open-source educational materials.</p>
+			<h3 class="skills-title">Professional Experience</h3>
+			<p><strong>8 years </strong> total experience across research institutions, technology companies, and education.</p>
+			<h3 class="skills-title">Technical Skills</h3>
+			<div class="skills-container">
+				<div class="skill-group">
+					<strong>Programming Languages:</strong> Python, C/C++, Java, JavaScript, TypeScript
+				</div>
+				<div class="skill-group">
+					<strong>Web Frameworks:</strong> Django, Django REST Framework, FastAPI, Flask, React, Node.js, jQuery
+				</div>
+				<div class="skill-group">
+					<strong>Scientific Computing:</strong> NumPy, SciPy, Pandas, Numba, PyQt, scikit-learn, PyTorch, tensorlow
+				</div>
+				<div class="skill-group">
+					<strong>Databases & Queues:</strong> PostgreSQL, MySQL, MongoDB, Elasticsearch, GraphQL, Celery, RabbitMQ, Kafka
+				</div>
+				<div class="skill-group">
+					<strong>DevOps & Cloud:</strong> Docker, Kubernetes, AWS, Google Cloud, Yandex Cloud, Heroku, Github Actions, CI/CD
+				</div>
+				<div class="skill-group">
+					<strong>Specializations:</strong> Particle beam dynamics simulation, Accelerator control systems, REST/GraphQL APIs, Microservices architecture, Machine Learning, Real-time systems
+				</div>
+			</div>
+		</section>
+
+		<!-- Experience -->
+		<section class="section">
+			<h2>Experience</h2>
+			<div class="experience-list">
+				<div class="experience-item">
+					<div class="experience-header">
+						<h3>Python Instructor, Novosibirsk State University (NSU)</h3>
+						<p class="experience-period">August 2024 – Present • 2+ years</p>
+					</div>
+					<p class="experience-desc">
+						Develop and conduct seminars and lectures for "Software development and application in Physical research" course for Applied Mathematics and Physics program. Focus on teaching practical Python programming for scientific computing with emphasis on best practices, testing, and real-world applications.
+					</p>
+					<div class="experience-tags">
+						<span class="tag">Python</span>
+						<span class="tag">Teaching</span>
+						<span class="tag">Scientific Computing</span>
+						<span class="tag">Course Design</span>
+					</div>
+				</div>
+
+				<div class="experience-item">
+					<div class="experience-header">
+						<h3>Research Scientist, Budker Institute of Nuclear Physics (BINP SB RAS)</h3>
+						<p class="experience-period">September 2018 – Present • 7+ years</p>
+					</div>
+					<p class="experience-desc">
+						Lead development of critical accelerator control and simulation software.
+						Developed SCAUT and ACCUMULATOR frameworks for automating particle accelerator experiments on SKIF injector.
+						Implemented beam envelope calculations and trajectory solvers using numerical relativistic schemes with Python/C++, NumPy, SciPy, Numba.
+						Applied ML algorithms for beam envelope optimization using genetic algorithms and Bayesian optimization.
+						Created real-time PyQt GUI for accelerator tuning. Established CI/CD pipelines with GitHub Actions.
+						Mentor team members and conduct training seminars on advanced topics.
+					</p>
+					<div class="experience-tags">
+						<span class="tag">Python</span>
+						<span class="tag">C++</span>
+						<span class="tag">Machine Learning</span>
+						<span class="tag">PyQt</span>
+						<span class="tag">NumPy/SciPy</span>
+						<span class="tag">Particle Physics</span>
+						<span class="tag">CI/CD</span>
+						<span class="tag">Mentoring</span>
+					</div>
+				</div>
+
+				<div class="experience-item">
+					<div class="experience-header">
+						<h3>Python Developer, SIBERS</h3>
+						<p class="experience-period">April 2021 – April 2024 • 3 years </p>
+					</div>
+					<p class="experience-desc">
+						Led team of 5 developers on fintech application using Django, PostgreSQL, Celery, RabbitMQ, React.
+						Developed ML-powered medical application for CPT code assignment using microservices, serverless computing, AWS Lambda, DynamoDB, GraphQL.
+						Created IntelliJ plugin for static code analysis based on SonarQube.
+						Managed team operations including estimation, code review, mentoring, and technical seminars.
+					</p>
+					<div class="experience-tags">
+						<span class="tag">Python</span>
+						<span class="tag">Django</span>
+						<span class="tag">GraphQL</span>
+						<span class="tag">React</span>
+						<span class="tag">Microservices</span>
+						<span class="tag">AWS</span>
+						<span class="tag">Kubernetes</span>
+						<span class="tag">Team Lead</span>
+					</div>
+				</div>
+
+				<div class="experience-item">
+					<div class="experience-header">
+						<h3>C++ Developer, Novosibirsk State University (Roscosmos Project)</h3>
+						<p class="experience-period">September 2017 – September 2018 • 1 year</p>
+					</div>
+					<p class="experience-desc">
+						Developed and tested IR horizon sensor for CubeSat "Norbi".
+						Created test software and conducted successful sensor trials whose results were used in satellite launch in 2020.
+						Collaborated on embedded systems and real-time processing for space applications.
+					</p>
+					<div class="experience-tags">
+						<span class="tag">C++</span>
+						<span class="tag">Embedded Systems</span>
+						<span class="tag">Space Technology</span>
+						<span class="tag">Testing</span>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Research Papers -->
+		<section class="section">
+			<h2>Publications & Software</h2>
+
+			<h3 class="subsection-title">Selected Publications</h3>
+			<div class="publications-list">
+				<div class="pub-item">
+					<strong>Adapting the AI scientist for enterprise: solving real business problems with autonomous TEXT-to-SQL research</strong><br>
+					V. Fedorov, D. Lavitskaya, D. M. Ibragimov, D. A. Safronov, A. Balles, A. Yu. Gribanova, M. S. Radionov<br>
+					<em>Doklady Rossijskoj Akademii Nauk. Mathematika, Informatika, Processy Upravlenia. Volume 527, Pages 471–484 (2025)</em>
+				</div>
+				<div class="pub-item">
+					<strong>Investigation of high current electron beam dynamics in linear induction accelerator for creation of a high-power THz radiation source</strong><br>
+					D.A. Nikiforov, A.V. Petrenko, S.L. Sinitsky, P.A. Bak, D.I. Skovorodin, P.V. Logachev, K.I. Zhivankov, E.S. Sandalov, O.I. Meshkov, A.V. Ivanov, V.V. Fedorov et al.<br>
+					<em>Journal of Instrumentation. Vol. 16, no. 11, P. P11024 (2021)</em>
+				</div>
+				<div class="pub-item">
+					<strong>Linear Induction Accelerator LIA-2 Upgrade</strong><br>
+					D. Starostenko, A. Akimov, P. Bak, D. Bolkhovityanov, V. Fedorov, Ya. Kulenko, G. Kuznetsov, P. Logachev, D. Nikiforov, A. Petrenko et al.<br>
+					<em>CERN-Proceedings. 27th Russian Particle Accelerator Conference, RuPAC 2021. P. 17-19 (2021)</em>
+				</div>
+				<div class="pub-item">
+					<strong>High-current electron-beam transport in the LIA-5 Linear Induction Accelerator</strong><br>
+					D.A. Nikiforov, M.F. Blinov, V.V. Fedorov, A.V. Petrenko, P.V. Logachev, P.A. Bak, K.I. Zhivankov, A.V. Ivanov, A.A. Starostenko, O.A. Pavlov et al.<br>
+					<em>Physics of Particles and Nuclei Letters. Vol. 17, no. 2, P. 197–203 (2020)</em>
+				</div>
+			</div>
+
+			<h3 class="subsection-title">Patents & Software Registrations</h3>
+			<div class="publications-list">
+				<div class="pub-item">
+					<strong>⚙️ SCAUT – Scan Accelerator Utils</strong><br>
+					V.V. Fedorov, D.A. Nikiforov<br>
+					<em>Software Registration Certificate № 2025619977 (April 21, 2025)</em>
+					<a href="https://github.com/fuodorov/scaut" class="github-link" target="_blank">GitHub Repository</a>
+				</div>
+				<div class="pub-item">
+					<strong>🔬 Electron-optical system of linear induction accelerator injector</strong><br>
+					M.A. Batazova, A.R. Don, I.A. Zhuravlev, P.V. Logachev, O.A. Pavlov, I.V. Penzin, A.V. Petrenko, R.V. Protas, D.A. Starostenko, V.V. Fedorov, S.D. Khrenkov<br>
+					<em>Patent for Invention № 2827479 C1 (September 27, 2024)</em>
+				</div>
+				<div class="pub-item">
+					<strong>⚙️ KENV – Kapchinsky Envelope Code</strong><br>
+					V.V. Fedorov, D.A. Nikiforov, A.V. Petrenko<br>
+					<em>Software Registration Certificate № 2024611244 (January 18, 2024)</em>
+					<a href="https://github.com/fuodorov/kenv" class="github-link" target="_blank">GitHub Repository</a>
+				</div>
+				<div class="pub-item">
+					<strong>⚙️ REDPIC – Relativistic Difference Scheme Particles-In-Cell</strong><br>
+					V.V. Fedorov, D.A. Nikiforov<br>
+					<em>Software Registration Certificate № 2023688768 (December 25, 2023)</em>
+					<a href="https://github.com/fuodorov/redpic" class="github-link" target="_blank">GitHub Repository</a>
+				</div>
+			</div>
+
+			<h3 class="subsection-title">Dissertations & Theses</h3>
+			<div class="publications-list">
+				<div class="pub-item">
+					<strong>Master's Thesis: Creation of a software package for the orchestration of accelerator experiments</strong><br>
+					<em>Novosibirsk State University, 2026</em>
+					<a href="https://github.com/fuodorov/magister-disser" class="github-link" target="_blank">GitHub Repository</a><br>
+				</div>
+				<div class="pub-item">
+					<strong>Bachelor's Thesis: Creation of a software package for calculating particle dynamics in external electromagnetic fields</strong><br>
+					<em>Novosibirsk State University, 2024</em>
+					<a href="https://github.com/fuodorov/bachelor-disser" class="github-link" target="_blank">GitHub Repository</a><br>
+				</div>
+			</div>
+
+			<h3 class="subsection-title">Online Courses & Educational Materials</h3>
+			<div class="publications-list">
+				<div class="pub-item">
+					<strong>📚 Basic ML in Physical Research</strong><br>
+					<em>Novosibirsk State University, 2026</em>
+					<a href="https://phys-dev.github.io/basic-ml-book" class="github-link" target="_blank">Markdown Book</a><br>
+				</div>
+				<div class="pub-item">
+					<strong>📚 Solving Problems in ML Courses</strong><br>
+					<em>Novosibirsk State University, 2026</em>
+					<a href="https://phys-dev.github.io/ml-recipe-book/" class="github-link" target="_blank">Jupyter Book</a>
+				</div>
+				<div class="pub-item">
+					<strong>📚 Software development and application in Physical research</strong><br>
+					<em>Novosibirsk State University, 2025</em>
+					<a href="https://phys-dev.github.io/soft-dev-book" class="github-link" target="_blank">Markdown Book</a><br>
+				</div>
+				<div class="pub-item">
+					<strong>📚 Microservices and Scalable Web Architectures</strong><br>
+					<em>SIBERS, 2023</em>
+					<a href="https://github.com/fuodorov/backend-developer-course" class="github-link" target="_blank">GitHub Repository</a>
+				</div>
+				<div class="pub-item">
+					<strong>📚 Solving Problems in Algorithms Courses</strong><br>
+					<em>SIBERS, 2022</em>
+					<a href="https://github.com/fuodorov/yalgorithms" class="github-link" target="_blank">GitHub Repository</a>
+				</div>
+			</div>
+		</section>
+
+		<!-- Footer -->
+		<footer class="footer">
+			<p>© 2026 Vyacheslav Fedorov. Built with simplicity in mind.</p>
+		</footer>
 	</div>
 </body>
 
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
