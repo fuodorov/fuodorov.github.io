@@ -19,7 +19,7 @@
 				<div class="header-text">
 					<h1>Vyacheslav Fedorov</h1>
 					<p class="subtitle">Hi, I'm Slava Fuodorov.</p>
-					<p class="subtitle">Software engineer and research scientist focused on Python for scientific computing and accelerator physics.</p>
+					<p class="subtitle">Software engineer, research scientist, and lecturer focused on Python for scientific computing and accelerator physics.</p>
 					<div class="contacts">
 						<a href="mailto:slava@fuodorov.ru" class="contact-link">Email</a>
 						<span class="divider">•</span>
@@ -53,10 +53,10 @@
 		<!-- About -->
 		<section class="section">
 			<h2>About</h2>
-			<p>Python developer and research scientist with 8+ years across academia and industry. I teach "Software development and application in Physical research" at NSU and work at BINP on particle beam dynamics and accelerator control systems.</p>
-			<p>I enjoy solving problems at the intersection of physics, mathematics, and software engineering. I mentor teams, run seminars on advanced CS topics, and build open educational materials.</p>
+			<p>Python developer, lecturer, and research scientist with 9+ years across academia and industry. I teach "Software development and application in Physical research" at NSU and work at BINP and SKIF on particle beam dynamics, digital twins, and intelligent accelerator control systems.</p>
+			<p>I build software at the intersection of physics, mathematics, and engineering: from experiment orchestration with SCAUT/ACCUMULATOR to conversational AI assistant workflows in SAVA for documentation search, EPICS control, and operations logging.</p>
 			<h3 class="skills-title">Professional Experience</h3>
-			<p><strong>8 years </strong> total experience across research institutions, technology companies, and education.</p>
+			<p><strong>9 years </strong> total experience across research institutions, technology companies, and education.</p>
 			<h3 class="skills-title">Technical Skills</h3>
 			<div class="skills-container">
 				<div class="skill-group">
@@ -66,7 +66,7 @@
 					<strong>Web Frameworks:</strong> Django, Django REST Framework, FastAPI, Flask, React, Node.js, jQuery
 				</div>
 				<div class="skill-group">
-					<strong>Scientific Computing:</strong> NumPy, SciPy, Pandas, Numba, PyQt, scikit-learn, PyTorch, tensorlow
+					<strong>Scientific Computing:</strong> NumPy, SciPy, Pandas, Numba, PyQt, scikit-learn, PyTorch, TensorFlow
 				</div>
 				<div class="skill-group">
 					<strong>Databases & Queues:</strong> PostgreSQL, MySQL, MongoDB, Elasticsearch, GraphQL, Celery, RabbitMQ, Kafka
@@ -107,7 +107,8 @@
 					</div>
 					<p class="experience-desc">
 						Lead development of critical accelerator control and simulation software.
-						Developed SCAUT and ACCUMULATOR frameworks for automating particle accelerator experiments on SKIF injector.
+						Developed SCAUT and ACCUMULATOR frameworks for automating particle accelerator experiments on SKIF injector, including digital-twin workflows based on Elegant, EPICS IOC, and Docker.
+						Designed and implemented SAVA, a conversational LLM assistant with Telegram/Web/CLI interfaces for documentation search (RAG), EPICS-based control checks, and operations logging.
 						Implemented beam envelope calculations and trajectory solvers using numerical relativistic schemes with Python/C++, NumPy, SciPy, Numba.
 						Applied ML algorithms for beam envelope optimization using genetic algorithms and Bayesian optimization.
 						Created real-time PyQt GUI for accelerator tuning. Established CI/CD pipelines with GitHub Actions.
@@ -203,6 +204,12 @@
 			<h3 class="subsection-title">Projects & Software</h3>
 			<div class="publications-list">
 				<div class="pub-item">
+					<strong>⚙️ SAVA</strong><br>
+					<em>Conversational accelerator assistant (2026)</em>
+					LLM-based assistant for accelerator operations with Telegram bot, Web UI, and CLI access. Combines RAG over documentation, EPICS PV polling/checks, and automated shift-log actions to support operators and shorten the "hypothesis - experiment" cycle.
+					<br><a href="https://github.com/fuodorov/sava" class="github-link" target="_blank">GitHub Repository</a>
+				</div>
+				<div class="pub-item">
 					<strong>⚙️ ACCUMULATOR</strong><br>
 					<em>Accelerator universal emulator (2026)</em>
 					Accelerator experiment emulator focused on simulation-assisted setup and control-loop prototyping for injector operations. Used in SKIF-related workflows to validate configurations before machine time and standardize experiment preparation.
@@ -261,10 +268,11 @@
 			<h3 class="subsection-title">Dissertations & Theses</h3>
 			<div class="publications-list">
 				<div class="pub-item">
-					<strong>Master's Thesis: Creation of a software package for the orchestration of accelerator experiments</strong><br>
+					<strong>Master's Thesis: Intelligent control system for the SKIF accelerator complex using digital twins and agent systems</strong><br>
 					<em>Novosibirsk State University, 2026</em>
-					Developed software package for orchestrating accelerator experiments on SKIF injector workflows. Unified tuning, telemetry, and experiment scripts in a single interface to improve repeatability of multi-step runs.
+					Developed SAVA software package for orchestrating accelerator experiments on SKIF injector workflows. Unified tuning, telemetry, and experiment scripts in a single interface, and validated agent-based workflows with SCAUT and ACCUMULATOR digital twins.
 					<br><a href="https://github.com/fuodorov/magister-disser" class="github-link" target="_blank">GitHub Repository</a>
+					<br><a href="magister-disser-it-presentation-0.0.5.pdf" class="github-link" target="_blank">Presentation (PDF)</a>
 				</div>
 				<div class="pub-item">
 					<strong>Bachelor's Thesis: Creation of a software package for calculating particle dynamics in external electromagnetic fields</strong><br>
